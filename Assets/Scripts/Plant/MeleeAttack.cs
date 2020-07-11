@@ -7,7 +7,7 @@ public class MeleeAttack : ThirdPlantStage
 
     protected override void Attack()
     {
-        
+        Debug.Log("Melee attack");
     }
 
 

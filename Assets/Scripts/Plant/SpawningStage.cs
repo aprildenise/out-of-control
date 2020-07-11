@@ -21,6 +21,12 @@ public abstract class SpawningStage : PlantStage
         propagateTimer.SetTimer(timeToPropagate);
         spawnFruitTimer.StartTimer();
         propagateTimer.StartTimer();
+        OnStart();
+    }
+
+    protected virtual void OnStart()
+    {
+        return;
     }
 
     protected void LateUpdate()
@@ -41,11 +47,16 @@ public abstract class SpawningStage : PlantStage
         Debug.Log(stageController.parentPlant.gameObject.name + ":Spawn fruit");
         spawnFruitTimer.ResetTimer();
         spawnFruitTimer.StartTimer();
-        PrefabManager.instance.InitPrefab("Test Fruit", this.transform.position);
+
+        Vector3 pos = new Vector3(
+            Random.Range(transform.position.x - spawnRadius, transform.position.x + spawnRadius),
+            0f, Random.Range(transform.position.z - spawnRadius, transform.position.z + spawnRadius));
+
+        PrefabManager.instance.InitPrefab("Test Fruit", pos);
     }
 
     private void Propogate()
-    { 
+    {
         int random = Random.Range(0, 100);
         if (random < mutateChance)
         {
@@ -57,6 +68,10 @@ public abstract class SpawningStage : PlantStage
         }
         propagateTimer.ResetTimer();
         propagateTimer.StartTimer();
-        PrefabManager.instance.InitPrefab("Test Plant", this.transform.position);
+
+        Vector3 pos = new Vector3(
+            Random.Range(transform.position.x - spawnRadius, transform.position.x + spawnRadius),
+            0f, Random.Range(transform.position.z - spawnRadius, transform.position.z + spawnRadius));
+        PrefabManager.instance.InitPrefab("Test Plant", pos);
     }
 }

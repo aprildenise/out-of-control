@@ -6,6 +6,6 @@ public class RangedAttack : ThirdPlantStage
 {
     protected override void Attack()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Ranged Attack");
     }
 }

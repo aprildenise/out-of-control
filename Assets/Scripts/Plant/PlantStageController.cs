@@ -23,6 +23,7 @@ public class PlantStageController : MonoBehaviour
         parentPlant = GetComponent<Plant>();
         foreach(Transform child in transform)
         {
+            if (!child.gameObject.CompareTag("Stage")) continue;
             PlantStage stage = child.GetComponent<PlantStage>();
             stage.stageController = this;
             stages.Add(stage);

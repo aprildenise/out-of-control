@@ -5,21 +5,40 @@ using UnityEngine;
 public abstract class ThirdPlantStage : SpawningStage
 {
     public float aggroRadius;
+    public float attackCooldown;
+
+    private Timer attackCooldownTimer;
 
 
-
-    private void Update()
+    protected override void OnStart()
     {
-        Collider[] hits = Physics.OverlapSphere(transform.position, aggroRadius);
-        foreach(Collider hit in hits)
+        attackCooldownTimer = gameObject.AddComponent<Timer>();
+        attackCooldownTimer.SetTimer(attackCooldown);
+        attackCooldownTimer.StartTimer();
+    }
+
+    protected void Update()
+    {
+        if (attackCooldownTimer.GetStatus() == Timer.Status.FINISHED)
         {
-            if (hit.gameObject.CompareTag("Player"))
+            Collider[] hits = Physics.OverlapSphere(transform.position, aggroRadius);
+            foreach (Collider hit in hits)
             {
-                Attack();
+                if (hit.gameObject.CompareTag("Player"))
+                {
+                    Attack();
+                }
             }
         }
     }
 
     protected abstract void Attack();
+
+    void OnDrawGizmosSelected()
+    {
+        // Display the explosion radius when selected
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, aggroRadius);
+    }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Plant : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Plant : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    public Image healthBar;
     private PlantStageController stageController;
 
 
@@ -16,6 +18,11 @@ public class Plant : MonoBehaviour
         stageController = GetComponent<PlantStageController>();
 
         currentHealth = maxHealth;
+    }
+
+    private void LateUpdate()
+    {
+        healthBar.fillAmount = currentHealth / maxHealth;
     }
 
 
