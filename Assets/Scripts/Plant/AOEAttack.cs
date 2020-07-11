@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class AOEAttack : ThirdPlantStage
 {
-    protected override void Attack()
-    {
-        throw new System.NotImplementedException();
-    }
+
 }

@@ -7,9 +7,10 @@ public class Plant : MonoBehaviour
 {
 
     public int maxHealth;
-    public int currentHealth;
+    public float currentHealth;
+    public float healthLossCoeff;
 
-    public Image healthBar;
+    //public Image healthBar;
     private PlantStageController stageController;
 
 
@@ -22,7 +23,16 @@ public class Plant : MonoBehaviour
 
     private void LateUpdate()
     {
-        healthBar.fillAmount = currentHealth / maxHealth;
+        currentHealth -= Time.deltaTime * healthLossCoeff;
+
+        if (currentHealth <= 0)
+        {
+            //TODO: DESTROY?
+            Destroy(this.gameObject);
+        }
+
+        float healthPercentage = (1f - (currentHealth / maxHealth));
+        stageController.currentStage.sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
     }
 
 
@@ -37,6 +47,17 @@ public class Plant : MonoBehaviour
         ResetHealth();
     }
 
+    public void InteractWith()
+    {
 
-
+        Debug.Log("Player interact with:" + gameObject.name);
+        GameObject playeritem = PlayerController.instance.currentlyHolding;
+        if (playeritem.GetComponent<WateringCan>())
+        {
+            // TODO: IS THIS APPROPRIATE?
+            Destroy(playeritem.gameObject);
+            PlayerController.instance.currentlyHolding = null;
+            ResetHealth();
+        }
+    }
 }

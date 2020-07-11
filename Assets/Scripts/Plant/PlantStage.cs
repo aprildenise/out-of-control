@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlantStage : MonoBehaviour
+public abstract class PlantStage : MonoBehaviour, Interactible
 {
 
     [HideInInspector] public PlantStageController stageController;
+    public SpriteRenderer sprite;
 
-
-
-    protected virtual void Interact()
+    public void InteractWith()
     {
+        stageController.parentPlant.InteractWith();
+    }
 
+    private void Awake()
+    {
+        sprite = GetComponent<SpriteRenderer>();
     }
 
 }

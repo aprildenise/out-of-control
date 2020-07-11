@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Interactible
+public interface Destructible
 {
-    void InteractWith();
+
+    void TakeDamage();
+
 }

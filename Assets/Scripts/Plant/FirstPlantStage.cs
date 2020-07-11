@@ -39,9 +39,4 @@ public class FirstPlantStage : PlantStage
         requestTimer.StartTimer();
     }
 
-    protected override void Interact()
-    {
-        GiveTools();
-    }
-
 }

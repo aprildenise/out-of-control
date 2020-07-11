@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, Destructible
 {
     public float interactionRadius; 
     private new Rigidbody rigidbody;
@@ -10,7 +10,20 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public bool isMoving;
     public Vector3 moveVelocity;
+    public Transform overHeadPosition;
+    public GameObject currentlyHolding;
 
+    public static PlayerController instance { get; private set; }
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+        instance = this;
+
+    }
 
     private void Start()
     {
@@ -30,10 +43,12 @@ public class PlayerController : MonoBehaviour
             Collider[] hits = Physics.OverlapSphere(transform.position, interactionRadius);
             foreach (Collider hit in hits)
             {
+                Debug.Log(hit.gameObject.name);
                 Interactible interactible = hit.gameObject.GetComponent<Interactible>();
                 if (interactible != null)
                 {
-                    interactible.Interact();
+                    interactible.InteractWith();
+                    return;
                 }
                 else
                 {
@@ -55,4 +70,8 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, interactionRadius);
     }
 
+    public void TakeDamage()
+    {
+        Debug.Log("Player took damage");
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Item : MonoBehaviour, Interactible
 {
-    public void Interact()
+    public void InteractWith()
     {
         throw new System.NotImplementedException();
     }

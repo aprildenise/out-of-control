@@ -6,12 +6,18 @@ public abstract class ThirdPlantStage : SpawningStage
 {
     public float aggroRadius;
     public float attackCooldown;
+    private bool findTriggers = false;
 
+
+    private Animator anim;
+    private BoxCollider hitBox;
     private Timer attackCooldownTimer;
 
 
     protected override void OnStart()
     {
+        anim = GetComponent<Animator>();
+        hitBox = GetComponent<BoxCollider>();
         attackCooldownTimer = gameObject.AddComponent<Timer>();
         attackCooldownTimer.SetTimer(attackCooldown);
         attackCooldownTimer.StartTimer();
@@ -26,13 +32,45 @@ public abstract class ThirdPlantStage : SpawningStage
             {
                 if (hit.gameObject.CompareTag("Player"))
                 {
-                    Attack();
+                    anim.SetTrigger("Attack");
                 }
             }
         }
     }
 
-    protected abstract void Attack();
+    /// <summary>
+    /// Called by animator.
+    /// </summary>
+    public virtual void OnAttack()
+    {
+        findTriggers = true;
+    }
+
+    /// <summary>
+    /// Called by animator.
+    /// </summary>
+    public virtual void OnIdle()
+    {
+        findTriggers = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!findTriggers) return;
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<Destructible>().TakeDamage();
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (!findTriggers) return;
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<Destructible>().TakeDamage();
+        }
+    }
 
     void OnDrawGizmosSelected()
     {

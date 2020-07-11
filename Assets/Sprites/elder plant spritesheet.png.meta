@@ -1,0 +1,1634 @@
+fileFormatVersion: 2
+guid: ddb48cf593f5a734889b17bcea18e1d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3623589115756846420
+    second: elder plant spritesheet_0
+  - first:
+      213: -6413079994110347142
+    second: elder plant spritesheet_1
+  - first:
+      213: 8745216057327082810
+    second: elder plant spritesheet_2
+  - first:
+      213: 2865596804639826412
+    second: elder plant spritesheet_3
+  - first:
+      213: -8945944601158754787
+    second: elder plant spritesheet_4
+  - first:
+      213: -4532200562751430555
+    second: elder plant spritesheet_5
+  - first:
+      213: 7378437702722684281
+    second: elder plant spritesheet_6
+  - first:
+      213: -3738477221181548043
+    second: elder plant spritesheet_7
+  - first:
+      213: -575973921018664616
+    second: elder plant spritesheet_8
+  - first:
+      213: -2861471184632684101
+    second: elder plant spritesheet_9
+  - first:
+      213: 8750678002783694595
+    second: elder plant spritesheet_10
+  - first:
+      213: -2715530944217569820
+    second: elder plant spritesheet_11
+  - first:
+      213: 4606424541606820054
+    second: elder plant spritesheet_12
+  - first:
+      213: -8369222778439089282
+    second: elder plant spritesheet_13
+  - first:
+      213: 800426979326179011
+    second: elder plant spritesheet_14
+  - first:
+      213: -8572025041647540094
+    second: elder plant spritesheet_15
+  - first:
+      213: -5967748614816786217
+    second: elder plant spritesheet_16
+  - first:
+      213: 8768111078053335727
+    second: elder plant spritesheet_17
+  - first:
+      213: -3645912208570258069
+    second: elder plant spritesheet_18
+  - first:
+      213: 6997181800056845697
+    second: elder plant spritesheet_19
+  - first:
+      213: 3361112145652155521
+    second: elder plant spritesheet_20
+  - first:
+      213: 8898168987375243187
+    second: elder plant spritesheet_21
+  - first:
+      213: 799593021406547396
+    second: elder plant spritesheet_22
+  - first:
+      213: -646003686508736994
+    second: elder plant spritesheet_23
+  - first:
+      213: 5203957448594266857
+    second: elder plant spritesheet_24
+  - first:
+      213: 2735598530984700149
+    second: elder plant spritesheet_25
+  - first:
+      213: -5370325199490446221
+    second: elder plant spritesheet_26
+  - first:
+      213: 6682152137933173256
+    second: elder plant spritesheet_27
+  - first:
+      213: 7830526700967586546
+    second: elder plant spritesheet_28
+  - first:
+      213: 8113362441365843011
+    second: elder plant spritesheet_29
+  - first:
+      213: 2317495332900453711
+    second: elder plant spritesheet_30
+  - first:
+      213: 1389622484864783836
+    second: elder plant spritesheet_31
+  - first:
+      213: -4522277069409550512
+    second: elder plant spritesheet_32
+  - first:
+      213: -4012877181749022172
+    second: elder plant spritesheet_33
+  - first:
+      213: 6721312537511869576
+    second: elder plant spritesheet_34
+  - first:
+      213: 2591992389080016149
+    second: elder plant spritesheet_35
+  - first:
+      213: -9076080347068901589
+    second: elder plant spritesheet_36
+  - first:
+      213: -5098096114383483047
+    second: elder plant spritesheet_37
+  - first:
+      213: -2983929341204088545
+    second: elder plant spritesheet_38
+  - first:
+      213: 1602969227061862982
+    second: elder plant spritesheet_39
+  - first:
+      213: 8165050274282132150
+    second: elder plant spritesheet_40
+  - first:
+      213: -4328039952006075950
+    second: elder plant spritesheet_41
+  - first:
+      213: 3895991500930886477
+    second: elder plant spritesheet_42
+  - first:
+      213: 7279640999975504724
+    second: elder plant spritesheet_43
+  - first:
+      213: 3937492552308294238
+    second: elder plant spritesheet_44
+  - first:
+      213: 6794251237343882405
+    second: elder plant spritesheet_45
+  - first:
+      213: -46698542090748130
+    second: elder plant spritesheet_46
+  - first:
+      213: -2321968880033856202
+    second: elder plant spritesheet_47
+  - first:
+      213: 2166922211766330735
+    second: elder plant spritesheet_48
+  - first:
+      213: -883160034777656273
+    second: elder plant spritesheet_49
+  - first:
+      213: 8683997580710474237
+    second: elder plant spritesheet_50
+  - first:
+      213: -353931825674117420
+    second: elder plant spritesheet_51
+  - first:
+      213: -4166509630334013219
+    second: elder plant spritesheet_52
+  - first:
+      213: -7957067386933418716
+    second: elder plant spritesheet_53
+  - first:
+      213: 6332864120687062115
+    second: elder plant spritesheet_54
+  - first:
+      213: -7308182601869714281
+    second: elder plant spritesheet_55
+  - first:
+      213: 3935020773014919613
+    second: elder plant spritesheet_0
+  - first:
+      213: 6082849386762836612
+    second: elder plant spritesheet_1
+  - first:
+      213: 1112106382325153076
+    second: elder plant spritesheet_2
+  - first:
+      213: -2683086086269870189
+    second: elder plant spritesheet_3
+  - first:
+      213: -4559314820858609383
+    second: elder plant spritesheet_4
+  - first:
+      213: -1237596294744334697
+    second: elder plant spritesheet_5
+  - first:
+      213: 8250082251504711979
+    second: elder plant spritesheet_6
+  - first:
+      213: 6235253370004056774
+    second: elder plant spritesheet_7
+  - first:
+      213: 2480882658557980987
+    second: elder plant spritesheet_8
+  - first:
+      213: -1023364039134561263
+    second: elder plant spritesheet_9
+  - first:
+      213: -8578054770688222667
+    second: elder plant spritesheet_10
+  - first:
+      213: -2096575813767482365
+    second: elder plant spritesheet_11
+  - first:
+      213: -3867110787965629443
+    second: elder plant spritesheet_12
+  - first:
+      213: -4532346451741199107
+    second: elder plant spritesheet_13
+  - first:
+      213: -7463083382623973046
+    second: elder plant spritesheet_14
+  - first:
+      213: -3454203259198181213
+    second: elder plant spritesheet_15
+  - first:
+      213: -3145251866587573488
+    second: elder plant spritesheet_16
+  - first:
+      213: -4939959862018571952
+    second: elder plant spritesheet_17
+  - first:
+      213: -3697349974511981274
+    second: elder plant spritesheet_18
+  - first:
+      213: 2956441303384614767
+    second: elder plant spritesheet_19
+  - first:
+      213: -4821959036282048667
+    second: elder plant spritesheet_20
+  - first:
+      213: -1630754004743925139
+    second: elder plant spritesheet_21
+  - first:
+      213: -492614803483445492
+    second: elder plant spritesheet_22
+  - first:
+      213: 1434116710414041093
+    second: elder plant spritesheet_23
+  - first:
+      213: -6087760533422663489
+    second: elder plant spritesheet_24
+  - first:
+      213: 3720717477516089347
+    second: elder plant spritesheet_25
+  - first:
+      213: -1836243096006644705
+    second: elder plant spritesheet_26
+  - first:
+      213: 3043256453906175656
+    second: elder plant spritesheet_27
+  - first:
+      213: -69630284152457821
+    second: elder plant spritesheet_28
+  - first:
+      213: 5671946694030809959
+    second: elder plant spritesheet_29
+  - first:
+      213: 9200593594333185947
+    second: elder plant spritesheet_30
+  - first:
+      213: -4395162016492442424
+    second: elder plant spritesheet_31
+  - first:
+      213: 3573671165670825616
+    second: elder plant spritesheet_32
+  - first:
+      213: -2725742059150816101
+    second: elder plant spritesheet_33
+  - first:
+      213: 2537895778449891584
+    second: elder plant spritesheet_34
+  - first:
+      213: -7388205470196341223
+    second: elder plant spritesheet_35
+  - first:
+      213: -7577654758333684066
+    second: elder plant spritesheet_36
+  - first:
+      213: -3895029981706531401
+    second: elder plant spritesheet_37
+  - first:
+      213: 5915272213910730490
+    second: elder plant spritesheet_38
+  - first:
+      213: 7328544480444071506
+    second: elder plant spritesheet_39
+  - first:
+      213: 8480626596598702812
+    second: elder plant spritesheet_40
+  - first:
+      213: 3966519837558397320
+    second: elder plant spritesheet_41
+  - first:
+      213: 1123439791329415827
+    second: elder plant spritesheet_42
+  - first:
+      213: 3658433994106764572
+    second: elder plant spritesheet_43
+  - first:
+      213: 2254700907714625161
+    second: elder plant spritesheet_44
+  - first:
+      213: -8845976078079052603
+    second: elder plant spritesheet_45
+  - first:
+      213: 3837358667313257095
+    second: elder plant spritesheet_46
+  - first:
+      213: 1213195433148823233
+    second: elder plant spritesheet_47
+  - first:
+      213: 5100002424788528010
+    second: elder plant spritesheet_48
+  - first:
+      213: -4728012009283889897
+    second: elder plant spritesheet_49
+  - first:
+      213: -7999233999140285777
+    second: elder plant spritesheet_50
+  - first:
+      213: -3551535214675729712
+    second: elder plant spritesheet_51
+  - first:
+      213: 4949542375074899439
+    second: elder plant spritesheet_56
+  - first:
+      213: 7331679004864545259
+    second: elder plant spritesheet_57
+  - first:
+      213: -801175209185740963
+    second: elder plant spritesheet_52
+  - first:
+      213: -4926709912109862617
+    second: elder plant spritesheet_53
+  - first:
+      213: 3810775720617693913
+    second: elder plant spritesheet_54
+  - first:
+      213: 667424804805273462
+    second: elder plant spritesheet_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elder plant spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9565f5b800c9630800000000000000
+      internalID: 3935020773014919613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a9338f94f9a6450800000000000000
+      internalID: 6082849386762836612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d7feeccdefe6f00800000000000000
+      internalID: 1112106382325153076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f571e8b63c3cad0800000000000000
+      internalID: -2683086086269870189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9118c83a35f0ab0c0800000000000000
+      internalID: -4559314820858609383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e9c6c1abc23dee0800000000000000
+      internalID: -1237596294744334697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 2118
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2971b0d81e2e7270800000000000000
+      internalID: 8250082251504711979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca26ab77e1188650800000000000000
+      internalID: 6235253370004056774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3176c832addd6220800000000000000
+      internalID: 2480882658557980987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cb97314d74cc1f0800000000000000
+      internalID: -1023364039134561263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a984172a0a4f880800000000000000
+      internalID: -8578054770688222667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304b6bfc76777e2e0800000000000000
+      internalID: -2096575813767482365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb4a382a33455ac0800000000000000
+      internalID: -3867110787965629443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1853
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4b6f06aeed911c0800000000000000
+      internalID: -4532346451741199107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41d391643dcd6890800000000000000
+      internalID: -7463083382623973046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0fe79df643010d0800000000000000
+      internalID: -3454203259198181213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013d9e27712d954d0800000000000000
+      internalID: -3145251866587573488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05102b3bdacb17bb0800000000000000
+      internalID: -4939959862018571952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62de9ee99cf50bcc0800000000000000
+      internalID: -3697349974511981274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67688793b3670920800000000000000
+      internalID: 2956441303384614767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1588
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f6ce8edc5f41db0800000000000000
+      internalID: -4821959036282048667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62513f6fd56e59e0800000000000000
+      internalID: -1630754004743925139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07354b3271e929f0800000000000000
+      internalID: -492614803483445492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5004ea2cc8107e310800000000000000
+      internalID: 1434116710414041093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb813b79c0ee38ba0800000000000000
+      internalID: -6087760533422663489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3081fe425d4a2a330800000000000000
+      internalID: 3720717477516089347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ca24d02aa5486e0800000000000000
+      internalID: -1836243096006644705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1323
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a61e77fe91db3a20800000000000000
+      internalID: 3043256453906175656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5bb7f10af980ff0800000000000000
+      internalID: -69630284152457821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b58aa877dc6be40800000000000000
+      internalID: 5671946694030809959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97c6f090231faf70800000000000000
+      internalID: 9200593594333185947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccadacbe6f3103c0800000000000000
+      internalID: -4395162016492442424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e9dd5bdfa389130800000000000000
+      internalID: 3573671165670825616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c49fee9083c2ad0800000000000000
+      internalID: -2725742059150816101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1058
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001287f93ca683320800000000000000
+      internalID: 2537895778449891584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916695de442d77990800000000000000
+      internalID: -7388205470196341223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96e8fa3523c6d690800000000000000
+      internalID: -7577654758333684066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdc2ee4ed212f9c0800000000000000
+      internalID: -3895029981706531401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af633e3fcb4471250800000000000000
+      internalID: 5915272213910730490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25eb48d606834b560800000000000000
+      internalID: 7328544480444071506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2eef215fc31b570800000000000000
+      internalID: 8480626596598702812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 793
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8895538d6c8eb0730800000000000000
+      internalID: 3966519837558397320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3929ab8b982479f00800000000000000
+      internalID: 1123439791329415827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d72fc955e55c230800000000000000
+      internalID: 3658433994106764572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eb417978e4a4f10800000000000000
+      internalID: 2254700907714625161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4be7eff97cc3580800000000000000
+      internalID: -8845976078079052603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a19f07069014530800000000000000
+      internalID: 3837358667313257095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c636f391d226d010800000000000000
+      internalID: 1213195433148823233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 528
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ba6233f29d6c640800000000000000
+      internalID: 5100002424788528010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7155adca02ab26eb0800000000000000
+      internalID: -4728012009283889897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2140e3f030df090800000000000000
+      internalID: -7999233999140285777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d266f10a8966bec0800000000000000
+      internalID: -3551535214675729712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd072baf0959d26c0800000000000000
+      internalID: -4166509630334013219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425ecf3be51d29190800000000000000
+      internalID: -7957067386933418716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c6e546d5ad2e750800000000000000
+      internalID: 6332864120687062115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elder plant spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 263
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c9dddd4ae149a90800000000000000
+      internalID: -7308182601869714281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f5f1664c3fd6f4943a064a8838001931
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
