@@ -6,7 +6,7 @@ public abstract class ThirdPlantStage : SpawningStage
 {
     public float aggroRadius;
     public float attackCooldown;
-    private bool findTriggers = false;
+    protected bool findTriggers = false;
 
 
     private Animator anim;
@@ -21,10 +21,14 @@ public abstract class ThirdPlantStage : SpawningStage
         attackCooldownTimer = gameObject.AddComponent<Timer>();
         attackCooldownTimer.SetTimer(attackCooldown);
         attackCooldownTimer.StartTimer();
+
+        stageController.parentPlant.decreaseHealthOverTime = false;
     }
 
     protected void Update()
     {
+
+
         if (attackCooldownTimer.GetStatus() == Timer.Status.FINISHED)
         {
             Collider[] hits = Physics.OverlapSphere(transform.position, aggroRadius);

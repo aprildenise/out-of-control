@@ -17,10 +17,11 @@ public class PlantStageController : MonoBehaviour
     private Timer toNextStageTimer;
 
 
-    private void Start()
+    private void Awake()
     {
 
         parentPlant = GetComponent<Plant>();
+
         foreach(Transform child in transform)
         {
             if (!child.gameObject.CompareTag("Stage")) continue;

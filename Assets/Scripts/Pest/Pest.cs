@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pest : MonoBehaviour
+public abstract class Pest : NPC
 {
 
-    public Sprite healthBar;
-
+    public float maxhealth;
+    public float currentHealth;
 
 }

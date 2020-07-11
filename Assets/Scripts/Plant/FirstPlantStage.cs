@@ -6,12 +6,13 @@ public class FirstPlantStage : PlantStage
 {
 
 
+    public float maxHealth;
     public float timeUntilNextRequest;
     private Timer requestTimer;
 
     private void Start()
-    { 
-
+    {
+        stageController.parentPlant.SetMaxHealth(maxHealth);
         requestTimer = gameObject.AddComponent<Timer>();
         requestTimer.SetTimer(timeUntilNextRequest);
         requestTimer.StartTimer();
@@ -28,7 +29,9 @@ public class FirstPlantStage : PlantStage
 
     private void RequestTools()
     {
-        Debug.Log(stageController.parentPlant.gameObject.name  + ":Requesting tools");
+        Debug.Log(stageController.parentPlant.gameObject.name + ":Requesting tools");
+
+        stageController.parentPlant.decreaseHealthOverTime = true;
     }
 
     public void GiveTools()
@@ -37,6 +40,8 @@ public class FirstPlantStage : PlantStage
         stageController.parentPlant.ResetHealth();
         requestTimer.ResetTimer();
         requestTimer.StartTimer();
+
+        stageController.parentPlant.decreaseHealthOverTime = false;
     }
 
 }

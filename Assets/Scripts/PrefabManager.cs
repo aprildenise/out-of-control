@@ -19,7 +19,7 @@ public class PrefabManager : MonoBehaviour
         instance = this;
     }
 
-    public void InitPrefab(string prefabName, Vector3 position)
+    public GameObject InitPrefab(string prefabName, Vector3 position)
     {
         foreach (GameObject prefab in prefabs)
         {
@@ -29,9 +29,21 @@ public class PrefabManager : MonoBehaviour
                 {
                     GameManager.totalPlants++;
                 }
-                Instantiate(prefab, position, prefab.transform.rotation, this.gameObject.transform);
+                return Instantiate(prefab, position, prefab.transform.rotation, this.gameObject.transform);
             }
         }
+        return null;
+    }
+
+    public GameObject InitPrefab(int prefabIndex, Vector3 position)
+    {
+        GameObject prefab = prefabs[prefabIndex];
+        if (prefab == null) return null;
+        if (prefab.CompareTag("Plant"))
+        {
+            GameManager.totalPlants++;
+        }
+        return Instantiate(prefab, position, prefab.transform.rotation, this.gameObject.transform);
     }
 
 }

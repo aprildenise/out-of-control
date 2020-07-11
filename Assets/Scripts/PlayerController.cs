@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour, Destructible
 {
+
+
+    public float maxHealth;
+    public float currentHealth;
+
+    public SpriteRenderer sprite;
     public float interactionRadius; 
     private new Rigidbody rigidbody;
     public float health;
@@ -21,6 +27,7 @@ public class PlayerController : MonoBehaviour, Destructible
             Destroy(this);
             return;
         }
+        currentHealth = maxHealth;
         instance = this;
 
     }
@@ -73,5 +80,17 @@ public class PlayerController : MonoBehaviour, Destructible
     public void TakeDamage()
     {
         Debug.Log("Player took damage");
+        currentHealth -= 10;
+
+        float healthPercentage = (1f - (currentHealth / maxHealth));
+        sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
+    }
+
+    public void ResetHealth()
+    {
+        Debug.Log("Player heal");
+        currentHealth = maxHealth;
+        float healthPercentage = (1f - (currentHealth / maxHealth));
+        sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
     }
 }

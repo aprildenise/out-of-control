@@ -18,4 +18,6 @@ public abstract class PlantStage : MonoBehaviour, Interactible
         sprite = GetComponent<SpriteRenderer>();
     }
 
+
+
 }
