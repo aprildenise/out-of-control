@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class Plant : MonoBehaviour
 {
 
-    public int maxHealth;
+    [HideInInspector] public int maxHealth;
     public float currentHealth;
     public float healthLossCoeff;
+    public bool allowRequestTools;
+    public bool decreaseHealthOverTime;
 
     //public Image healthBar;
     private PlantStageController stageController;
@@ -17,13 +19,12 @@ public class Plant : MonoBehaviour
     private void Awake()
     {
         stageController = GetComponent<PlantStageController>();
-
         currentHealth = maxHealth;
     }
 
     private void LateUpdate()
     {
-        currentHealth -= Time.deltaTime * healthLossCoeff;
+        if (decreaseHealthOverTime) currentHealth -= Time.deltaTime * healthLossCoeff;
 
         if (currentHealth <= 0)
         {
@@ -60,4 +61,6 @@ public class Plant : MonoBehaviour
             ResetHealth();
         }
     }
+
+
 }

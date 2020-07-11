@@ -31,6 +31,9 @@ public abstract class SpawningStage : PlantStage
 
     protected void LateUpdate()
     {
+
+        OnLateUpdate();
+
         if (spawnFruitTimer.GetStatus() == Timer.Status.FINISHED)
         {
             SpawnFruit();
@@ -40,6 +43,12 @@ public abstract class SpawningStage : PlantStage
         {
             Propogate();
         }
+
+    }
+
+    protected virtual void OnLateUpdate()
+    {
+        return;
     }
 
     private void SpawnFruit()

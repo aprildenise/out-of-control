@@ -480,8 +480,9 @@ GameObject:
   m_Component:
   - component: {fileID: 884898182}
   - component: {fileID: 884898181}
-  - component: {fileID: 884898180}
-  - component: {fileID: 884898183}
+  - component: {fileID: 9040043756368750472}
+  - component: {fileID: 8196516705394443508}
+  - component: {fileID: 4750059399111213214}
   m_Layer: 0
   m_Name: Test NPC
   m_TagString: Untagged
@@ -489,19 +490,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &884898180
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884898179}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.62
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &884898181
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -566,20 +554,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &884898183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884898179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb522f0ea14b37449874be50f2075c7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toolSuppling: {fileID: 6205673827183901675, guid: c57de232d1e52a946ae4dcb2176f12b4,
-    type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,6 +671,7 @@ MonoBehaviour:
   - {fileID: 174876743164073215, guid: 0fb5f6923b70a5744841c15d469ab5d2, type: 3}
   - {fileID: 3182355108312508351, guid: 2c23ce89b2a93c240ada405ade35fc40, type: 3}
   - {fileID: 6657909955181751129, guid: 634be5e36ea029b41b96caca942af071, type: 3}
+  - {fileID: 5224356155118869823, guid: 173b4e06fea202b4486a9d51860d530a, type: 3}
 --- !u!4 &1144948556
 Transform:
   m_ObjectHideFlags: 0
@@ -1111,7 +1086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4151659059672966988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,7 +1102,7 @@ MonoBehaviour:
   parentPlant: {fileID: 0}
   stages: []
   currentStage: {fileID: 0}
-  timeToNextStage: 5
+  timeToNextStage: 2
 --- !u!114 &4151659059672966989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,6 +1118,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthLossCoeff: 1
+  allowRequestTools: 0
+  decreaseHealthOverTime: 0
 --- !u!212 &4151659059672966990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,16 +1197,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4151659060112204130}
-  - component: {fileID: 4151659060112204141}
   - component: {fileID: 4151659060112204140}
   - component: {fileID: 4151659060112204131}
+  - component: {fileID: 4151659060112204132}
   m_Layer: 0
   m_Name: Third Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4151659060112204130
 Transform:
   m_ObjectHideFlags: 0
@@ -1263,6 +1240,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4151659060112204132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4151659060112204129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846791fe703b21a4f9828fd3d3ead7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageController: {fileID: 0}
+  sprite: {fileID: 0}
+  spawnRadius: 10
+  timeToFruit: 10
+  timeToPropagate: 10
+  mutateChance: 10
+  aggroRadius: 50
+  attackCooldown: 2
 --- !u!212 &4151659060112204140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1314,26 +1311,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4151659060112204141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151659060112204129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d0a6724726f5044b8c32fff07a1e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stageController: {fileID: 0}
-  sprite: {fileID: 0}
-  spawnRadius: 10
-  timeToFruit: 2
-  timeToPropagate: 3
-  mutateChance: 0
-  aggroRadius: 35.36
-  attackCooldown: 1
 --- !u!1 &4151659060530698040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,7 +1403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4151659060631453605
 Transform:
   m_ObjectHideFlags: 0
@@ -1459,6 +1436,8 @@ MonoBehaviour:
   timeToFruit: 2
   timeToPropagate: 3
   mutateChance: 0
+  maxHealth: 0
+  timeUntilNextRequest: 0
 --- !u!212 &4151659060631453607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1582,6 +1561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
+  maxHealth: 0
   timeUntilNextRequest: 2
 --- !u!212 &4151659061051746661
 SpriteRenderer:
@@ -1633,6 +1613,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!135 &4750059399111213214
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884898179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.100000024
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5402775987068435256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1645,9 +1638,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7776ef642944977469716ef59eed11f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 10
   currentHealth: 0
   healthLossCoeff: 3
+  allowRequestTools: 0
+  decreaseHealthOverTime: 0
 --- !u!4 &5402775987068435258
 Transform:
   m_ObjectHideFlags: 0
@@ -1718,7 +1713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5402775987592417933
 Transform:
   m_ObjectHideFlags: 0
@@ -1751,6 +1746,8 @@ MonoBehaviour:
   timeToFruit: 2
   timeToPropagate: 3
   mutateChance: 0
+  maxHealth: 50
+  timeUntilNextRequest: 10
 --- !u!212 &5402775987592417935
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1861,6 +1858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
+  maxHealth: 10
   timeUntilNextRequest: 2
 --- !u!212 &5402775987770674192
 SpriteRenderer:
@@ -1964,7 +1962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5402775988586151355
 Transform:
   m_ObjectHideFlags: 0
@@ -2159,17 +2157,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7252837187063730752}
-  - component: {fileID: 7252837187063730765}
   - component: {fileID: 7252837187063730754}
   - component: {fileID: 7252837187063730755}
   - component: {fileID: 7252837187063730764}
+  - component: {fileID: 7252837187063730756}
   m_Layer: 0
   m_Name: Third Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &7252837187063730754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2240,6 +2238,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7252837187063730756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252837187063730753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f4bb2e3f6d86a43a549a7a2c71a3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageController: {fileID: 0}
+  sprite: {fileID: 0}
+  spawnRadius: 10
+  timeToFruit: 10
+  timeToPropagate: 10
+  mutateChance: 10
+  aggroRadius: 10
+  attackCooldown: 10
 --- !u!65 &7252837187063730764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2253,26 +2271,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4802139, y: 2.6500003, z: 0.20000003}
   m_Center: {x: 0, y: 0.00000023841858, z: 0}
---- !u!114 &7252837187063730765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7252837187063730753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5d0a6724726f5044b8c32fff07a1e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stageController: {fileID: 0}
-  sprite: {fileID: 0}
-  spawnRadius: 10
-  timeToFruit: 2
-  timeToPropagate: 3
-  mutateChance: 0
-  aggroRadius: 21.52
-  attackCooldown: 1
 --- !u!212 &7252837187604720465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2341,7 +2339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &7252837187604720469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2373,6 +2371,8 @@ MonoBehaviour:
   timeToFruit: 2
   timeToPropagate: 3
   mutateChance: 0
+  maxHealth: 0
+  timeUntilNextRequest: 0
 --- !u!4 &7252837187604720471
 Transform:
   m_ObjectHideFlags: 0
@@ -2497,6 +2497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
+  maxHealth: 0
   timeUntilNextRequest: 2
 --- !u!223 &7252837188434381136
 Canvas:
@@ -2631,7 +2632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &7252837188540282130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2697,6 +2698,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthLossCoeff: 0.1
+  allowRequestTools: 0
+  decreaseHealthOverTime: 0
 --- !u!4 &7252837188540282141
 Transform:
   m_ObjectHideFlags: 0
@@ -2715,3 +2718,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &8196516705394443508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884898179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2836b2ad01347e749b5377483aa68989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 0
+--- !u!54 &9040043756368750472
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884898179}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
