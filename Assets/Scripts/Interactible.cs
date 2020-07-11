@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pest : MonoBehaviour
+public interface Interactible
 {
-
-    public Sprite healthBar;
-
-
+    void Interact();
 }

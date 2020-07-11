@@ -25,6 +25,10 @@ public class PrefabManager : MonoBehaviour
         {
             if (prefab.name.Equals(prefabName))
             {
+                if (prefab.CompareTag("Plant"))
+                {
+                    GameManager.totalPlants++;
+                }
                 Instantiate(prefab, position, prefab.transform.rotation, this.gameObject.transform);
             }
         }

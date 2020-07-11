@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pest : MonoBehaviour
+public class Seed : Item
 {
 
-    public Sprite healthBar;
 
 
 }
