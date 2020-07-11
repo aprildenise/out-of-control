@@ -35,4 +35,15 @@ public class PrefabManager : MonoBehaviour
         return null;
     }
 
+    public GameObject InitPrefab(int prefabIndex, Vector3 position)
+    {
+        GameObject prefab = prefabs[prefabIndex];
+        if (prefab == null) return null;
+        if (prefab.CompareTag("Plant"))
+        {
+            GameManager.totalPlants++;
+        }
+        return Instantiate(prefab, position, prefab.transform.rotation, this.gameObject.transform);
+    }
+
 }

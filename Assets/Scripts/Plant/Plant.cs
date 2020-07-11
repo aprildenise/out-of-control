@@ -29,6 +29,7 @@ public class Plant : MonoBehaviour
         if (currentHealth <= 0)
         {
             //TODO: DESTROY?
+            GameManager.totalPlants--;
             Destroy(this.gameObject);
         }
 
@@ -44,8 +45,10 @@ public class Plant : MonoBehaviour
 
     public void SetMaxHealth(float max)
     {
-        currentHealth = maxHealth;
+        decreaseHealthOverTime = false;
+        maxHealth = (int)max;
         ResetHealth();
+        decreaseHealthOverTime = true;
     }
 
     public void InteractWith()

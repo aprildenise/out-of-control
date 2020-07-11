@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolsSupplier : NPC
+public class Supplier: Person
 {
 
     [SerializeField]
@@ -10,6 +10,7 @@ public class ToolsSupplier : NPC
 
     public override void InteractWith()
     {
+        agent.isStopped = true;
         Debug.Log("NPC Interaction:" + gameObject.name);
         GameObject tool = Instantiate(toolSuppling, 
             PlayerController.instance.overHeadPosition.position, 
@@ -17,6 +18,7 @@ public class ToolsSupplier : NPC
             PlayerController.instance.transform);
         tool.transform.localScale = new Vector3(1, 1, 1);
         PlayerController.instance.currentlyHolding = tool;
+        agent.isStopped = false;
 
     }
 
