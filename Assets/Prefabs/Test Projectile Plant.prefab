@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 6657909954223797181}
   - component: {fileID: 6657909954223797180}
   - component: {fileID: 4878829210184446092}
+  - component: {fileID: 6523811923672333206}
   m_Layer: 0
   m_Name: Second Stage
   m_TagString: Stage
@@ -403,6 +404,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.44
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &6523811923672333206
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657909954223797182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0f018a55b6a46b4cbc8c19f3ff20b54, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6657909954960598272
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +435,7 @@ GameObject:
   - component: {fileID: 6657909954960598399}
   - component: {fileID: 6657909954960598398}
   - component: {fileID: 4878829210894509622}
+  - component: {fileID: 6523811923672333207}
   m_Layer: 0
   m_Name: First Stage
   m_TagString: Stage
@@ -515,6 +536,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.44
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &6523811923672333207
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6657909954960598272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd1ad859f92e6f64a82012218b8f63de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6657909955181751129
 GameObject:
   m_ObjectHideFlags: 0

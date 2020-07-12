@@ -8,6 +8,11 @@ public class SecondPlantStage : SpawningStage
     public float timeUntilNextRequest;
     private Timer requestTimer;
 
+    public string currentlyRequesting;
+    public static readonly string water = "water";
+    public static readonly string dirt = "dirt";
+    public SpriteRenderer needs;
+
     protected override void OnStart()
     {
         stageController.parentPlant.SetMaxHealth(maxHealth);
@@ -25,27 +30,61 @@ public class SecondPlantStage : SpawningStage
         }
     }
 
-
-    public override void OnInteractWith()
-    {
-        GiveTools();
-    }
-
     private void RequestTools()
     {
         Debug.Log(stageController.parentPlant.gameObject.name + ":Requesting tools");
         stageController.parentPlant.requestAnim.SetBool("isRequesting", true);
         stageController.parentPlant.decreaseHealthOverTime = true;
+
+        int random = Random.Range(1, 3);
+        if (random == 1)
+        {
+            currentlyRequesting = water;
+        }
+        else
+        {
+            currentlyRequesting = dirt;
+        }
+        stageController.parentPlant.requestAnim.SetInteger("requestItem", random);
     }
 
-    public void GiveTools()
+    private bool PickUp()
     {
-        Debug.Log(stageController.parentPlant.gameObject.name + ":Tools given.");
-        stageController.parentPlant.ResetHealth();
-        requestTimer.ResetTimer();
-        requestTimer.StartTimer();
+        //if (PlayerController.instance.currentlyHolding != null) return false;
 
-        stageController.parentPlant.requestAnim.SetBool("isRequesting", false);
-        stageController.parentPlant.decreaseHealthOverTime = false;
+        //transform.SetParent(PlayerController.instance.transform);
+        //transform.position = PlayerController.instance.overHeadPosition.transform.position;
+        //PlayerController.instance.currentlyHolding = this.gameObject;
+
+        return true;
+    }
+
+    public void Drop()
+    {
+        //transform.SetParent(PrefabManager.instance.transform);
+        //PlayerController.instance.currentlyHolding = null;
+        //transform.position = PlayerController.instance.transform.position;
+    }
+
+    public bool GiveTools()
+    {
+        if (PlayerController.instance.currentlyHolding == null) return false;
+
+        if ((currentlyRequesting == water && PlayerController.instance.currentlyHolding.GetComponent<WateringCan>())
+            || currentlyRequesting == dirt && PlayerController.instance.currentlyHolding.GetComponent<Dirt>())
+        {
+
+            Debug.Log(stageController.parentPlant.gameObject.name + ":Tools given.");
+            stageController.parentPlant.ResetHealth();
+            requestTimer.ResetTimer();
+            requestTimer.StartTimer();
+
+            stageController.parentPlant.requestAnim.SetBool("isRequesting", false);
+            stageController.parentPlant.decreaseHealthOverTime = false;
+            return true;
+        }
+
+        return false;
+
     }
 }

@@ -6,8 +6,9 @@ public class Despawners : MonoBehaviour
 {
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnColliderEnter(Collider other)
     {
+        if (other.CompareTag("Player") || other.CompareTag("NPC")) return;
         Destroy(other.gameObject);
     }
 }

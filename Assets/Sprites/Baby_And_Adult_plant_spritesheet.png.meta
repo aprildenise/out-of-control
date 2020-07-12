@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: 992f82004c873ec44a65cf1255c3660e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 948490666569662670
+    second: Baby_And_Adult_plant_spritesheet_0
+  - first:
+      213: -2336770323974611712
+    second: Baby_And_Adult_plant_spritesheet_1
+  - first:
+      213: 8622703749236557642
+    second: Baby_And_Adult_plant_spritesheet_2
+  - first:
+      213: -2732041733347730432
+    second: Baby_And_Adult_plant_spritesheet_3
+  - first:
+      213: -6762104708561835081
+    second: Baby_And_Adult_plant_spritesheet_4
+  - first:
+      213: -518880754903449404
+    second: Baby_And_Adult_plant_spritesheet_5
+  - first:
+      213: -7723987576212384773
+    second: Baby_And_Adult_plant_spritesheet_6
+  - first:
+      213: -3365000671100454565
+    second: Baby_And_Adult_plant_spritesheet_7
+  - first:
+      213: -2822473075995239414
+    second: Baby_And_Adult_plant_spritesheet_8
+  - first:
+      213: 7384073432527360608
+    second: Baby_And_Adult_plant_spritesheet_9
+  - first:
+      213: 4503407450159861630
+    second: Baby_And_Adult_plant_spritesheet_10
+  - first:
+      213: 2493646839923838044
+    second: Baby_And_Adult_plant_spritesheet_11
+  - first:
+      213: -8626492665470036839
+    second: Baby_And_Adult_plant_spritesheet_12
+  - first:
+      213: -1476870165471056853
+    second: Baby_And_Adult_plant_spritesheet_13
+  - first:
+      213: 2963541030640709715
+    second: Baby_And_Adult_plant_spritesheet_14
+  - first:
+      213: -2775482839819517830
+    second: Baby_And_Adult_plant_spritesheet_15
+  - first:
+      213: 1432696661561566598
+    second: Baby_And_Adult_plant_spritesheet_16
+  - first:
+      213: -3560736613493813043
+    second: Baby_And_Adult_plant_spritesheet_17
+  - first:
+      213: -7127979033245279679
+    second: Baby_And_Adult_plant_spritesheet_18
+  - first:
+      213: 189636696261757530
+    second: Baby_And_Adult_plant_spritesheet_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1271
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec088a56c37b92d00800000000000000
+      internalID: 948490666569662670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1271
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d91d565cf129fd0800000000000000
+      internalID: -2336770323974611712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1271
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a478ca8ff5ff9a770800000000000000
+      internalID: 8622703749236557642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1271
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c144cb486d51ad0800000000000000
+      internalID: -2732041733347730432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbec20489d2822a0800000000000000
+      internalID: -6762104708561835081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1006
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0813bd3b09cc8f0800000000000000
+      internalID: -518880754903449404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1006
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3945e0932eec490800000000000000
+      internalID: -7723987576212384773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1006
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b593b1ad7bd1d41d0800000000000000
+      internalID: -3365000671100454565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 741
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c133501bf84d8d0800000000000000
+      internalID: -2822473075995239414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 741
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06251351aaf797660800000000000000
+      internalID: 7384073432527360608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 741
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f40a147315f7e30800000000000000
+      internalID: 4503407450159861630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 741
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c8fe8c6963b9220800000000000000
+      internalID: 2493646839923838044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994552930aa884880800000000000000
+      internalID: -8626492665470036839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 476
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ca9b7c86a118be0800000000000000
+      internalID: -1476870165471056853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 476
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35072a8addc902920800000000000000
+      internalID: 2963541030640709715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 476
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a708d54ff018b79d0800000000000000
+      internalID: -2775482839819517830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 211
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685e34fd506f1e310800000000000000
+      internalID: 1432696661561566598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 211
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc059f56ae8b59ec0800000000000000
+      internalID: -3560736613493813043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 211
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a9bfcb5d4541d90800000000000000
+      internalID: -7127979033245279679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baby_And_Adult_plant_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 211
+        width: 348
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a8f0d0299b1a200800000000000000
+      internalID: 189636696261757530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b7125bbbaa6754346b7d97f329c33bb4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

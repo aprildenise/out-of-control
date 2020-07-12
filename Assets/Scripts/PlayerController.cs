@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour, Destructible
 
     public float maxHealth;
     public float currentHealth;
+    public int fruit;
+    public int money;
 
+    public bool placedFirstPlant = false;
+
+    public Animator anim;
     public SpriteRenderer sprite;
     public float interactionRadius; 
     private new Rigidbody rigidbody;
@@ -42,11 +47,25 @@ public class PlayerController : MonoBehaviour, Destructible
         // Get axis input for movement.
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         isMoving = moveInput != Vector3.zero;
+        anim.SetBool("isMoving", isMoving);
         moveVelocity = moveInput.normalized * moveSpeed;
 
         // TODO: CHANGE INPUT KEY ACCORDINGLY
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (!placedFirstPlant)
+            {
+                int random = Random.Range(1, 3 + 1);
+                GameObject spawn = PrefabManager.instance.InitPrefab(random, transform.position);
+                placedFirstPlant = true;
+                return;
+            }
+
+            //if (currentlyHolding.GetComponent<Plant>())
+            //{
+
+            //}
+
             Collider[] hits = Physics.OverlapSphere(transform.position, interactionRadius);
             foreach (Collider hit in hits)
             {
@@ -55,11 +74,6 @@ public class PlayerController : MonoBehaviour, Destructible
                 if (interactible != null)
                 {
                     interactible.InteractWith();
-                    return;
-                }
-                else
-                {
-                    continue;
                 }
             }
         }
@@ -67,7 +81,10 @@ public class PlayerController : MonoBehaviour, Destructible
 
     private void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
+        //rigidbody.MovePosition(moveVelocity * Time.fixedDeltaTime);
+        
+        if (isMoving) rigidbody.MovePosition(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
+        //rigidbody.AddForce(rigidbody.position + moveVelocity * Time.fixedDeltaTime);
     }
 
     void OnDrawGizmosSelected()
