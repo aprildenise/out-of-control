@@ -25,10 +25,16 @@ public class SecondPlantStage : SpawningStage
         }
     }
 
+
+    public override void OnInteractWith()
+    {
+        GiveTools();
+    }
+
     private void RequestTools()
     {
         Debug.Log(stageController.parentPlant.gameObject.name + ":Requesting tools");
-
+        stageController.parentPlant.requestAnim.SetBool("isRequesting", true);
         stageController.parentPlant.decreaseHealthOverTime = true;
     }
 
@@ -39,6 +45,7 @@ public class SecondPlantStage : SpawningStage
         requestTimer.ResetTimer();
         requestTimer.StartTimer();
 
+        stageController.parentPlant.requestAnim.SetBool("isRequesting", false);
         stageController.parentPlant.decreaseHealthOverTime = false;
     }
 }
