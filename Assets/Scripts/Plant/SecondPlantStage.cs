@@ -81,6 +81,8 @@ public class SecondPlantStage : SpawningStage
 
             stageController.parentPlant.requestAnim.SetBool("isRequesting", false);
             stageController.parentPlant.decreaseHealthOverTime = false;
+            Destroy(PlayerController.instance.currentlyHolding);
+            PlayerController.instance.currentlyHolding = null;
             return true;
         }
 

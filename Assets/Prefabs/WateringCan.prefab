@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1875630229217087497}
   - component: {fileID: 6841567054854435997}
   m_Layer: 0
-  m_Name: Test WateringCan
+  m_Name: WateringCan
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
