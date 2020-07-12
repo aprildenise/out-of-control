@@ -13,10 +13,9 @@ public class DialogueManager : MonoBehaviour
     public CanvasGroup options;
     public bool displayingText = false;
 
-    public Speaker inDialogueWith;
-    public string[] currentDialogue;
-    public int currentDialogueIndex;
-    public bool showOptions;
+    private string[] currentDialogue;
+    private int currentDialogueIndex;
+    private bool showOptions;
     private string currentName;
 
     public static DialogueManager instance { get; private set; }
@@ -28,12 +27,6 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         instance = this;
-    }
-
-    private void Start()
-    {
-        HideOptions();
-        HideDialogue();
     }
 
     private void Update()
@@ -50,12 +43,11 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayText()
     {
-        if (currentDialogueIndex >= currentDialogue.Length)
+        if (currentDialogueIndex > currentDialogue.Length - 1)
         {
             if (showOptions)
             {
-                DisplayOptions();
-                // Wait for OnYes and OnNo funcs to close.
+
             }
             else
             {
@@ -68,49 +60,31 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayOptions()
     {
-        options.alpha = 1;
-        options.interactable = true;
+        dialogueBox.alpha = 1;
+        dialogueBox.interactable = true;
     }
 
     public void HideOptions()
     {
-        options.alpha = 0;
-        options.interactable = false;
+        dialogueBox.alpha = 0;
+        dialogueBox.interactable = false;
     }
 
-    public void DisplayDialogue(string[] dialogue, string name, bool showOptionsAtEnd, Speaker callingObject)
+    public void DisplayDialogue(string[] dialogue, string name, bool showOptionsAtEnd)
     {
-
-        PlayerController.instance.GetComponent<BoxCollider>().enabled = false;
         dialogueBox.alpha = 1;
         dialogueBox.interactable = true;
         displayingText = true;
-        currentDialogue = dialogue;
-        currentDialogueIndex = 0;
+        currentDialogueIndex = -1;
         nameText.SetText(name);
-        inDialogueWith = callingObject;
-        showOptions = showOptionsAtEnd;
-        DisplayText();
     }
 
     public void HideDialogue()
     {
-        PlayerController.instance.GetComponent<BoxCollider>().enabled = true;
         HideOptions();
         dialogueBox.alpha = 0;
         dialogueBox.interactable = false;
         displayingText = false;
-        inDialogueWith = null;
-    }
-
-    public void Yes()
-    {
-        inDialogueWith.OnYes();
-    }
-
-    public void No()
-    {
-        inDialogueWith.OnNo();
     }
 
 }

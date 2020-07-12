@@ -50,10 +50,10 @@ public class PlantStageController : MonoBehaviour
     public bool NextStage()
     {
 
-        //if (currentStageIndex == 0)
-        //{
-        //    currentStage.GetComponent<FirstPlantStage>().Drop();
-        //}
+        if (currentStageIndex == 0)
+        {
+            currentStage.GetComponent<FirstPlantStage>().Drop();
+        }
 
         currentStageIndex++;
         if (currentStageIndex >= stages.Count) return false;

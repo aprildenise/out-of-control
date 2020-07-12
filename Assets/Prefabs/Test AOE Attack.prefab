@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 174876742704440675}
   - component: {fileID: 3641757231722823918}
   - component: {fileID: 4089453664479274704}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: First Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -100,8 +100,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   maxHealth: 30
   timeUntilNextRequest: 5
-  currentlyRequesting: 
-  needs: {fileID: 0}
 --- !u!135 &3641757231722823918
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -110,7 +108,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174876742704440685}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.44
@@ -146,7 +144,7 @@ GameObject:
   - component: {fileID: 174876743164073213}
   - component: {fileID: 174876743164073214}
   - component: {fileID: 741605855092135756}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Test AOE Attack
   m_TagString: Plant
   m_Icon: {fileID: 0}
@@ -237,7 +235,7 @@ GameObject:
   - component: {fileID: 174876743835284397}
   - component: {fileID: 174876743835284386}
   - component: {fileID: 6070878060247381956}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Third Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -355,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
-  spawnRadius: 30
+  spawnRadius: 50
   timeToFruit: 120
   timeToPropagate: 20
   mutateChance: 10
@@ -374,7 +372,7 @@ GameObject:
   - component: {fileID: 174876744367868600}
   - component: {fileID: 3641757231150182203}
   - component: {fileID: 4089453664479274703}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Second Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -459,14 +457,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
-  spawnRadius: 20
+  spawnRadius: 50
   timeToFruit: 3
   timeToPropagate: 5
   mutateChance: 0
   maxHealth: 100
   timeUntilNextRequest: 20
-  currentlyRequesting: 
-  needs: {fileID: 0}
 --- !u!135 &3641757231150182203
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -475,7 +471,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174876744367868602}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.44
@@ -512,7 +508,7 @@ GameObject:
   - component: {fileID: 4089453663088643463}
   - component: {fileID: 4089453663088643462}
   - component: {fileID: 4089453663088643461}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: NeedsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +619,7 @@ GameObject:
   - component: {fileID: 4089453664176624846}
   - component: {fileID: 4089453664176624845}
   - component: {fileID: 4089453664176624844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Need Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +719,7 @@ GameObject:
   - component: {fileID: 4089453664185852152}
   - component: {fileID: 4089453664185852154}
   - component: {fileID: 4089453664185852153}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}

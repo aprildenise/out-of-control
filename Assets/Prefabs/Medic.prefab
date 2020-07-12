@@ -49,7 +49,6 @@ MonoBehaviour:
   isMoving: 0
   anim: {fileID: 6459601015617585368}
   agent: {fileID: 6459601015593668357}
-  personName: Medic
   timeToHeal: 0
 --- !u!195 &6459601015593668357
 NavMeshAgent:

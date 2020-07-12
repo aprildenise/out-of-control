@@ -10,7 +10,18 @@ public abstract class PlantStage : MonoBehaviour, Interactible
 
     public void InteractWith()
     {
+        //stageController.parentPlant.InteractWith();
 
+        Debug.Log("Player interact with:" + gameObject.name);
+        GameObject playeritem = PlayerController.instance.currentlyHolding;
+        if (playeritem == null) return;
+        if (playeritem.GetComponent<WateringCan>())
+        {
+            // TODO: IS THIS APPROPRIATE?
+            Destroy(playeritem.gameObject);
+            PlayerController.instance.currentlyHolding = null;
+            stageController.parentPlant.ResetHealth();
+        }
 
         OnInteractWith();
 

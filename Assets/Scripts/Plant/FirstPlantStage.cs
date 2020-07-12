@@ -34,7 +34,10 @@ public class FirstPlantStage : PlantStage
 
     public override void OnInteractWith()
     {
-        GiveTools();
+        if (!GiveTools())
+        {
+
+        }
     }
 
     private void RequestTools()
@@ -55,23 +58,23 @@ public class FirstPlantStage : PlantStage
         stageController.parentPlant.requestAnim.SetInteger("requestItem", random);
     }
 
-    //private bool PickUp()
-    //{
-    //    if (PlayerController.instance.currentlyHolding != null) return false;
+    private bool PickUp()
+    {
+        if (PlayerController.instance.currentlyHolding != null) return false;
 
-    //    transform.SetParent(PlayerController.instance.transform);
-    //    transform.position = PlayerController.instance.overHeadPosition.transform.position;
-    //    PlayerController.instance.currentlyHolding = this.gameObject;
+        transform.SetParent(PlayerController.instance.transform);
+        transform.position = PlayerController.instance.overHeadPosition.transform.position;
+        PlayerController.instance.currentlyHolding = this.gameObject;
 
-    //    return true;
-    //}
+        return true;
+    }
 
-    //public void Drop()
-    //{
-    //    transform.SetParent(PrefabManager.instance.transform);
-    //    PlayerController.instance.currentlyHolding = null;
-    //    transform.position = PlayerController.instance.transform.position;
-    //}
+    public void Drop()
+    {
+        transform.SetParent(PrefabManager.instance.transform);
+        PlayerController.instance.currentlyHolding = null;
+        transform.position = PlayerController.instance.transform.position;
+    }
 
     public bool GiveTools()
     {
@@ -81,15 +84,13 @@ public class FirstPlantStage : PlantStage
             || currentlyRequesting == dirt && PlayerController.instance.currentlyHolding.GetComponent<Dirt>())
         {
 
-            Debug.Log(stageController.parentPlant.gameObject.name + ":!!!!!!!Tools given.");
+            Debug.Log(stageController.parentPlant.gameObject.name + ":Tools given.");
             stageController.parentPlant.ResetHealth();
             requestTimer.ResetTimer();
             requestTimer.StartTimer();
 
             stageController.parentPlant.requestAnim.SetBool("isRequesting", false);
             stageController.parentPlant.decreaseHealthOverTime = false;
-            Destroy(PlayerController.instance.currentlyHolding);
-            PlayerController.instance.currentlyHolding = null;
             return true;
         }
 

@@ -151,7 +151,6 @@ MonoBehaviour:
   isMoving: 0
   anim: {fileID: 8146051734464142152}
   agent: {fileID: 8146051734912554303}
-  personName: Fruit Trader
   numFruitBuying: 1
   fruitPrice: 2
 --- !u!195 &8146051734912554303
