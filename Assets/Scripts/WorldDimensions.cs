@@ -25,4 +25,12 @@ public class WorldDimensions : MonoBehaviour
 
         return new Vector3(x, 0, z);
     }
+
+    public bool IsWithinWorldDimensions(Vector3 position)
+    {
+        return (corners[0].position.x < position.x
+            && position.x < corners[1].position.x
+            && corners[0].position.z < position.z
+            && position.z < corners[3].position.z); 
+    }
 }

@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour, Destructible
             Collider[] hits = Physics.OverlapSphere(transform.position, interactionRadius);
             foreach (Collider hit in hits)
             {
-                Debug.Log(hit.gameObject.name);
+                Debug.Log("possible interaction with:" + hit.gameObject.name);
                 Interactible interactible = hit.gameObject.GetComponent<Interactible>();
                 if (interactible != null)
                 {

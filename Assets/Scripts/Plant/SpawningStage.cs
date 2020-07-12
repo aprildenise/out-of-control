@@ -57,9 +57,11 @@ public abstract class SpawningStage : PlantStage
         spawnFruitTimer.ResetTimer();
         spawnFruitTimer.StartTimer();
 
+        
         Vector3 pos = new Vector3(
             Random.Range(transform.position.x - spawnRadius, transform.position.x + spawnRadius),
             0f, Random.Range(transform.position.z - spawnRadius, transform.position.z + spawnRadius));
+
 
         PrefabManager.instance.InitPrefab("Test Fruit", pos);
     }

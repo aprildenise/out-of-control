@@ -10,21 +10,34 @@ public class Plant : MonoBehaviour
     public float currentHealth;
     public float healthLossCoeff;
     public bool allowRequestTools;
-    public bool decreaseHealthOverTime;
+    public bool decreaseHealthOverTime = false;
 
     //public Image healthBar;
     private PlantStageController stageController;
+    public Animator requestAnim;
 
 
     private void Awake()
     {
         stageController = GetComponent<PlantStageController>();
+        requestAnim = GetComponent<Animator>();
         currentHealth = maxHealth;
+        Debug.Log(decreaseHealthOverTime);
+    }
+
+    private void Start()
+    {
+        Debug.Log(decreaseHealthOverTime);
     }
 
     private void LateUpdate()
     {
-        if (decreaseHealthOverTime) currentHealth -= Time.deltaTime * healthLossCoeff;
+        Debug.Log(decreaseHealthOverTime);
+        if (decreaseHealthOverTime) {
+            currentHealth -= Time.deltaTime * healthLossCoeff;
+            float healthPercentage = (1f - (currentHealth / maxHealth));
+            stageController.currentStage.sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
+        }
 
         if (currentHealth <= 0)
         {
@@ -33,36 +46,25 @@ public class Plant : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        float healthPercentage = (1f - (currentHealth / maxHealth));
-        stageController.currentStage.sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
     }
 
 
     public void ResetHealth()
     {
         currentHealth = maxHealth;
+        float healthPercentage = (1f - (currentHealth / maxHealth));
+        stageController.currentStage.sprite.color = Color.HSVToRGB(0, healthPercentage, 1);
     }
 
     public void SetMaxHealth(float max)
     {
-        decreaseHealthOverTime = false;
         maxHealth = (int)max;
         ResetHealth();
-        decreaseHealthOverTime = true;
     }
 
     public void InteractWith()
     {
-
-        Debug.Log("Player interact with:" + gameObject.name);
-        GameObject playeritem = PlayerController.instance.currentlyHolding;
-        if (playeritem.GetComponent<WateringCan>())
-        {
-            // TODO: IS THIS APPROPRIATE?
-            Destroy(playeritem.gameObject);
-            PlayerController.instance.currentlyHolding = null;
-            ResetHealth();
-        }
+        return;
     }
 
 
