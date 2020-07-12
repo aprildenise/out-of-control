@@ -49,6 +49,7 @@ MonoBehaviour:
   isMoving: 0
   anim: {fileID: 6523333108043197711}
   agent: {fileID: 6523333106968238891}
+  personName: Dirt Man
   toolSuppling: {fileID: 7985774626449410269, guid: 1b5892c4a04e148428c553288ed30763,
     type: 3}
   toolPrice: 1

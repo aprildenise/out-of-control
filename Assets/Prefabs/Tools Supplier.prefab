@@ -49,6 +49,7 @@ MonoBehaviour:
   isMoving: 0
   anim: {fileID: 5968001474937069381}
   agent: {fileID: 5968001474145107742}
+  personName: Tools Supplier
   toolSuppling: {fileID: 6205673827183901675, guid: c57de232d1e52a946ae4dcb2176f12b4,
     type: 3}
   toolPrice: 1

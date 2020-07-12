@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6523811923938129165}
   - component: {fileID: 6523811923938129166}
   - component: {fileID: 6523811923938129167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NeedsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 6523811924026417334}
   - component: {fileID: 6523811924026417335}
   - component: {fileID: 6523811924026417328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Need Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 6523811924570997071}
   - component: {fileID: 6523811924570997069}
   - component: {fileID: 6523811924570997070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 6232742816020895870, guid: 2e061dc5ba05aaf43aabe4807a61a103,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -300,7 +301,7 @@ GameObject:
   - component: {fileID: 6657909954223797180}
   - component: {fileID: 4878829210184446092}
   - component: {fileID: 6523811923672333206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Second Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -315,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657909954223797182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.65, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6657909955181751125}
@@ -360,7 +361,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -148822550351090301, guid: cd7a953ab3f3a1a4aa59873bd8d6e65f,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -385,12 +387,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
-  spawnRadius: 50
+  spawnRadius: 20
   timeToFruit: 3
   timeToPropagate: 5
   mutateChance: 0
   maxHealth: 100
   timeUntilNextRequest: 20
+  currentlyRequesting: 
+  needs: {fileID: 0}
 --- !u!135 &4878829210184446092
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -399,11 +403,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657909954223797182}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.44
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.66, y: -0.34, z: 0}
 --- !u!95 &6523811923672333206
 Animator:
   serializedVersion: 3
@@ -436,7 +440,7 @@ GameObject:
   - component: {fileID: 6657909954960598398}
   - component: {fileID: 4878829210894509622}
   - component: {fileID: 6523811923672333207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: First Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -451,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657909954960598272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.65, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6657909955181751125}
@@ -496,7 +500,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -3413486467518424823, guid: cd7a953ab3f3a1a4aa59873bd8d6e65f,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -523,6 +528,8 @@ MonoBehaviour:
   sprite: {fileID: 0}
   maxHealth: 30
   timeUntilNextRequest: 5
+  currentlyRequesting: 
+  needs: {fileID: 0}
 --- !u!135 &4878829210894509622
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -531,11 +538,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6657909954960598272}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.44
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.66, y: -0.34, z: 0}
 --- !u!95 &6523811923672333207
 Animator:
   serializedVersion: 3
@@ -567,7 +574,7 @@ GameObject:
   - component: {fileID: 6657909955181751127}
   - component: {fileID: 6657909955181751126}
   - component: {fileID: 1818373636794045437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Test Projectile Plant
   m_TagString: Plant
   m_Icon: {fileID: 0}
@@ -657,7 +664,7 @@ GameObject:
   - component: {fileID: 6657909955900140918}
   - component: {fileID: 6657909955900140921}
   - component: {fileID: 2759887909780267600}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Third Stage
   m_TagString: Stage
   m_Icon: {fileID: 0}
@@ -762,7 +769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageController: {fileID: 0}
   sprite: {fileID: 0}
-  spawnRadius: 50
+  spawnRadius: 30
   timeToFruit: 120
   timeToPropagate: 20
   mutateChance: 0
