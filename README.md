@@ -1,2 +1,2 @@
 # out-of-control
-a secret thing for a jam (shhh...)
+a game made for GMTK Game Jam 2020!
